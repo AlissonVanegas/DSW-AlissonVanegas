@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estilosActividades.css">
+    <title>Autoevaluación A</title>
+</head>
+<body>
+    <fieldset id="marco">
+    <H1>¿Qué tanto has aprendido de html?</H1>
+    </fieldset>
+   
+    <form>
+        <fieldset>
+            <legend>selecciona la opción que consideres correcta.</legend>
+
+                <label for="cmbPregunta1">
+                   1.  Mencione 3  grupos según su función en HTML5:
+                </label>
+                <select name="" id="cmbPregunta1">
+                    <option value=0>-</option>
+                    <option value=0>Semántica, Conectividad, Mejora.</option>
+                    <option value=1>Semántica, Conectividad, Multimedia.</option>
+                    <option value=0>BSecciones, Rendimiento e Integración, Componente.</option>
+                   
+                </select>
+
+                <label for="cmbPregunta2">
+                    2.  Según su función el Rendimiento e Integración nos permite:
+                    </label>
+                    <select name="" id="cmbPregunta2">
+                        <option value=0>-</option>
+                        <option value=1> Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.</option>
+                        <option value=0>Permite describir con mayor precisión cuál es su contenido.</option>
+                        <option value=0>Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+                    
+                <label for="cmbPregunta3">
+                        3. HTML5 representa 2 términos, uno de ellos es:
+                        </label>
+                        <select name="" id="cmbPregunta3">
+                            <option value=0>-</option>
+                            <option value=0>Proporciona una amplia gama de nuevas características que se ocupan de los gráficos en la web como lo son canvas 2D, WebGL, SVG, etc..</option>
+                            <option value=0>Proporciona APIs para el uso de varios componentes internos de entrada y salida de nuestro dispositivo..</option>
+                            <option value=1>Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo reducido a HTML5 .</option>
+                            </select>
+
+                <label for="cmbPregunta4">
+                        4.  Algunas de las nuevas características de HTML5 son:
+                        </label>
+                        <select name="" id="cmbPregunta4">
+                            <option value=0>-</option>
+                            <option value=1>Nuevas etiquetas semánticas para estructurar los documentos HTML, destinadas a remplazar la necesidad de tener una etiqueta <div> que identifique cada bloque de la página.
+Los nuevos elementos multimedia como "< audio >" y "< video >"</option>
+                            <option value=0>Desde los comienzos de Internet, HTML (Hypertext Markup Language) se ha posicionado como el lenguaje estándar para la estructuración, la conexión y la puesta a disposición, independientemente de la plataforma, de contenidos en la World Wide Web.</option>
+                            <option value=0>Mientras que en los comienzos de Internet las páginas web tan solo servían para representar contenidos, hoy en día la interacción con la oferta online se sitúa en el centro del debate.</option>
+                            
+                        </select>
+
+                <label for="cmbPregunta5">
+                        5. Una innovación revolucionaria que incluye HTML5 es la introducción de nuevos elementos semánticos, alguno de ellos son:
+                        </label>
+                        <select name="" id="cmbPregunta5">
+                            <option value=0>-</option>
+                            <option value=1> < section > < nav > < article ></option>
+                            <option value=0> < audio > < opti > < opp ></option>
+                            <option value=0>< lift > < left > < teff ></option>
+                            </select>
+
+                    <input id="boton" type="button" value="Averigua tu calificación" onclick="calificarActividad()">
+        </fieldset>
+        <script>
+            function calificarActividad(){
+            var $puntaje=0;
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta1").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta2").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta3").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta4").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta5").value);
+            
+            alert("Tu calificación fué " + $puntaje + " de 5");
+            }
+            
+        </script>
+
+    </form>
+</body>
+</html>
